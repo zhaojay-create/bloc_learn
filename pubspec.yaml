@@ -1,0 +1,27 @@
+name: bloc_learn
+description: "A new Flutter project."
+publish_to: "none"
+version: 0.1.0
+
+environment:
+  sdk: ^3.8.0-110.0.dev
+
+dependencies:
+  flutter:
+    sdk: flutter
+  # 检测网络状态
+  connectivity_plus: ^7.0.0
+  # 图标库
+  cupertino_icons: ^1.0.8
+  # 状态管理
+  flutter_bloc: ^9.1.1
+  # 官方“注解工具包”
+  meta: ^1.16.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+
+flutter:
+  uses-material-design: true
