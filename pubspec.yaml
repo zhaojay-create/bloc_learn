@@ -17,6 +17,9 @@ dependencies:
   flutter_bloc: ^9.1.1
   # 官方“注解工具包”
   meta: ^1.16.0
+  # 本地持久化存储
+  hydrated_bloc: ^10.1.1
+  path_provider: ^2.1.5
 
 dev_dependencies:
   flutter_test:

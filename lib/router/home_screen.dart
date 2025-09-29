@@ -15,6 +15,7 @@ class HomeScreen extends StatelessWidget {
         'title': 'Bloc to Bloc Communication Listener',
         'route': AppRouter.blocListener,
       },
+      {'title': 'Hydrated Storage', 'route': AppRouter.hydratedStorage},
       // 以后新增页面就在这里继续加，比如：
       // {'title': 'Counter Example', 'route': '/counter'},
       // {'title': 'Theme Switcher', 'route': '/theme_switcher'},

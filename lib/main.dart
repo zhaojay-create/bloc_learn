@@ -1,7 +1,28 @@
+import 'package:bloc_learn/hydrated_storage/logic/utility/app_bloc_observer.dart';
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
+
+import 'package:hydrated_bloc/hydrated_bloc.dart';
+import 'package:path_provider/path_provider.dart';
+
 import 'package:bloc_learn/router/app_route.dart';
 
-void main() {
+// void main() {
+//   runApp(MainApp(appRouter: AppRouter()));
+// }
+
+// 持久化存储 入口位置
+Future<void> main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  // 本地持久化存储
+  HydratedBloc.storage = await HydratedStorage.build(
+    storageDirectory: kIsWeb
+        ? HydratedStorageDirectory.web
+        : HydratedStorageDirectory((await getTemporaryDirectory()).path),
+  );
+
+  Bloc.observer = AppBlocObserver(); // 为 BloC 注册观察者
+
   runApp(MainApp(appRouter: AppRouter()));
 }
 
