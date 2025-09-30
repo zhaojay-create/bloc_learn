@@ -1,5 +1,6 @@
 import 'package:bloc_learn/flutter_timer/flutter_timer.dart';
 import 'package:bloc_learn/hydrated_storage/hydrated_storage.dart';
+import 'package:bloc_learn/infinite_list/infinite_list_page.dart';
 import 'package:connectivity_plus/connectivity_plus.dart';
 import 'package:flutter/material.dart';
 import 'package:bloc_learn/router/home_screen.dart';
@@ -12,6 +13,7 @@ class AppRouter {
   static const blocListener = '/bloc_to_bloc_communication_listener';
   static const hydratedStorage = '/hydrated_storage';
   static const flutterTimer = '/flutter_timer';
+  static const infiniteList = '/infinite_list';
 
   Route onGenerateRoute(RouteSettings settings) {
     switch (settings.name) {
@@ -29,6 +31,8 @@ class AppRouter {
         return MaterialPageRoute(builder: (_) => const HydratedStorage());
       case flutterTimer:
         return MaterialPageRoute(builder: (_) => const FlutterTimer());
+      case infiniteList:
+        return MaterialPageRoute(builder: (_) => const InfiniteListPage());
       default:
         return MaterialPageRoute(builder: (_) => const Text('4045'));
     }

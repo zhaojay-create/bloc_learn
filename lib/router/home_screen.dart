@@ -16,10 +16,11 @@ class HomeScreen extends StatelessWidget {
         'route': AppRouter.blocListener,
       },
       {'title': 'Hydrated Storage', 'route': AppRouter.hydratedStorage},
-      {'title': 'flutter_timer_bloc_learn_1', 'route': AppRouter.flutterTimer},
-      // 以后新增页面就在这里继续加，比如：
-      // {'title': 'Counter Example', 'route': '/counter'},
-      // {'title': 'Theme Switcher', 'route': '/theme_switcher'},
+      {'title': 'flutter_learn_1_timer', 'route': AppRouter.flutterTimer},
+      {
+        'title': 'flutter_learn_2_infinite_list',
+        'route': AppRouter.infiniteList,
+      },
     ];
 
     return Scaffold(

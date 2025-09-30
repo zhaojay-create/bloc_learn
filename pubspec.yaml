@@ -9,6 +9,7 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  http: ^1.5.0
   # 值不同，就认为对象不同
   equatable: ^2.0.5
   # 检测网络状态
@@ -23,6 +24,10 @@ dependencies:
   hydrated_bloc: ^10.1.1
   # 路径提供工具包
   path_provider: ^2.1.5
+  # Bloc 事件层面的并发控制
+  bloc_concurrency: ^0.3.0
+  # 它给 Dart 的 Stream 加了一些常见的操作符（像 RxJS 里的那些）
+  stream_transform: ^2.1.1
 
 dev_dependencies:
   flutter_test:
