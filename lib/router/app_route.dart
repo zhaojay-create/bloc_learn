@@ -1,3 +1,4 @@
+import 'package:bloc_learn/flutter_timer/flutter_timer.dart';
 import 'package:bloc_learn/hydrated_storage/hydrated_storage.dart';
 import 'package:connectivity_plus/connectivity_plus.dart';
 import 'package:flutter/material.dart';
@@ -10,6 +11,7 @@ class AppRouter {
   static const blocStream = '/bloc_to_bloc_communication_stream';
   static const blocListener = '/bloc_to_bloc_communication_listener';
   static const hydratedStorage = '/hydrated_storage';
+  static const flutterTimer = '/flutter_timer';
 
   Route onGenerateRoute(RouteSettings settings) {
     switch (settings.name) {
@@ -25,6 +27,8 @@ class AppRouter {
         );
       case hydratedStorage:
         return MaterialPageRoute(builder: (_) => const HydratedStorage());
+      case flutterTimer:
+        return MaterialPageRoute(builder: (_) => const FlutterTimer());
       default:
         return MaterialPageRoute(builder: (_) => const Text('4045'));
     }

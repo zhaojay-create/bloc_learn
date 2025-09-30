@@ -9,6 +9,8 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  # 值不同，就认为对象不同
+  equatable: ^2.0.5
   # 检测网络状态
   connectivity_plus: ^7.0.0
   # 图标库
@@ -19,6 +21,7 @@ dependencies:
   meta: ^1.16.0
   # 本地持久化存储
   hydrated_bloc: ^10.1.1
+  # 路径提供工具包
   path_provider: ^2.1.5
 
 dev_dependencies:
