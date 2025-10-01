@@ -1,11 +1,14 @@
+import 'package:flutter/material.dart';
+
+import 'package:connectivity_plus/connectivity_plus.dart';
+
+import 'package:bloc_learn/authentication/authentication.dart';
+import 'package:bloc_learn/bloc_to_bloc_communication_listener/btbcl_screen.dart';
+import 'package:bloc_learn/bloc_to_bloc_communication_stream/btbcs_screen.dart';
 import 'package:bloc_learn/flutter_timer/flutter_timer.dart';
 import 'package:bloc_learn/hydrated_storage/hydrated_storage.dart';
 import 'package:bloc_learn/infinite_list/infinite_list_page.dart';
-import 'package:connectivity_plus/connectivity_plus.dart';
-import 'package:flutter/material.dart';
 import 'package:bloc_learn/router/home_screen.dart';
-import 'package:bloc_learn/bloc_to_bloc_communication_stream/btbcs_screen.dart';
-import 'package:bloc_learn/bloc_to_bloc_communication_listener/btbcl_screen.dart';
 
 class AppRouter {
   static const home = '/';
@@ -14,6 +17,8 @@ class AppRouter {
   static const hydratedStorage = '/hydrated_storage';
   static const flutterTimer = '/flutter_timer';
   static const infiniteList = '/infinite_list';
+  static const loginPage = '/login_page';
+  static const profilePage = '/profile_page';
 
   Route onGenerateRoute(RouteSettings settings) {
     switch (settings.name) {
@@ -33,6 +38,10 @@ class AppRouter {
         return MaterialPageRoute(builder: (_) => const FlutterTimer());
       case infiniteList:
         return MaterialPageRoute(builder: (_) => const InfiniteListPage());
+      case loginPage:
+        return MaterialPageRoute(builder: (_) => const LoginPage());
+      case profilePage:
+        return MaterialPageRoute(builder: (_) => const HomePage());
       default:
         return MaterialPageRoute(builder: (_) => const Text('4045'));
     }

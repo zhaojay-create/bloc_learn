@@ -21,6 +21,8 @@ class HomeScreen extends StatelessWidget {
         'title': 'flutter_learn_2_infinite_list',
         'route': AppRouter.infiniteList,
       },
+      {'title': 'Login Page', 'route': AppRouter.loginPage},
+      {'title': 'Profile Page', 'route': AppRouter.profilePage},
     ];
 
     return Scaffold(

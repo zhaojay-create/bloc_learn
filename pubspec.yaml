@@ -28,6 +28,14 @@ dependencies:
   bloc_concurrency: ^0.3.0
   # 它给 Dart 的 Stream 加了一些常见的操作符（像 RxJS 里的那些）
   stream_transform: ^2.1.1
+  # Flutter/Dart 的表单验证库
+  formz: ^0.8.0
+  # 用户仓库
+  user_repository:
+    path: packages/user_repository
+  # 认证仓库
+  authentication_repository:
+    path: packages/authentication_repository
 
 dev_dependencies:
   flutter_test:
